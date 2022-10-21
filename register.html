@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration Form</Form></div>
+        <form action="#">
+          <div class="user__details">
+            <div class="input__box">
+              <span class="details">First Name</span>
+              <input type="text" pattern="[A-Z a-z]{4,}" title="Your first name should consist atleast 4 characters or more"placeholder="Enter Your First Name" required>
+            </div>
+            <div class="input__box">
+              <span class="details">Last Name</span>
+              <input type="text" pattern="[A-Z a-z]{1,}" title="Your last name should consist only characters" placeholder="Enter Your Last Name" required>
+            </div>
+            <div class="input__box">
+              <span class="details">Email</span>
+              <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title = ="Enter Correct Email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input__box">
+              <span class="details">Phone Number</span>
+              <input type="tel" pattern="[0-9]{10}" title="Your Number should contain only 10 Numbers" placeholder="Enter Your Number" required>
+            </div>
+            <div class="input__box">
+                <span class="details">Username</span>
+                <input type="text" pattern="[A-Za-z0-9]{4,8}" title="Your Username should consist atleast 4 to 8 characters or Numbers." placeholder="Enter Your Username" required>
+              </div>
+            <div class="input__box">
+              <span class="details">Password</span>
+              <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Your Password" required>
+            </div>
+           
+      
+          </div>
+          <div class="gender__details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender__title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span>Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span>Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span>Other</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="SUBMIT">
+          </div>
+        </form>
+      </div>
+</body>
+</html>
